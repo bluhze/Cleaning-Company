@@ -1,0 +1,114 @@
+body * {
+  margin: 0;
+  padding: 0;
+}
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body section {
+  width: 100%;
+  clear: both;
+}
+body section .box {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+body section .box .pack {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+body section .box .pack .row-1 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+body section .box .pack .row-2 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+body section .box .pack .row-3 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+body section .box .pack .row-4 {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+body section .box .pack .row-1 > ul li,
+body section .box .pack .row-2 > ul li,
+body section .box .pack .row-3 > ul li,
+body section .box .pack .row-4 > ul li {
+  display: inline-block;
+}
+body section .box .pack .row-1 > ul li a,
+body section .box .pack .row-2 > ul li a,
+body section .box .pack .row-3 > ul li a,
+body section .box .pack .row-4 > ul li a {
+  text-decoration: none;
+}
+body section .box .pack .row-1 > .footer_style,
+body section .box .pack .row-2 > .footer_style,
+body section .box .pack .row-3 > .footer_style,
+body section .box .pack .row-4 > .footer_style {
+  text-align: left;
+}
+body section .box .pack .row-1 > .footer_style li,
+body section .box .pack .row-2 > .footer_style li,
+body section .box .pack .row-3 > .footer_style li,
+body section .box .pack .row-4 > .footer_style li {
+  display: initial;
+}
+body section .box .pack .row-1 > .footer_style li a,
+body section .box .pack .row-2 > .footer_style li a,
+body section .box .pack .row-3 > .footer_style li a,
+body section .box .pack .row-4 > .footer_style li a {
+  text-decoration: none;
+}
+body section .box .pack .row-1 > img,
+body section .box .pack .row-2 > img,
+body section .box .pack .row-3 > img,
+body section .box .pack .row-4 > img {
+  width: 25%;
+}
+body section .box .pack .row-1 > a img,
+body section .box .pack .row-2 > a img,
+body section .box .pack .row-3 > a img,
+body section .box .pack .row-4 > a img {
+  width: 25%;
+}
+body section .box .pack .row-1.mobile-row,
+body section .box .pack .row-2.mobile-row,
+body section .box .pack .row-3.mobile-row,
+body section .box .pack .row-4.mobile-row {
+  display: block;
+}
+body section .box .pack .row-1.desktop-row,
+body section .box .pack .row-2.desktop-row,
+body section .box .pack .row-3.desktop-row,
+body section .box .pack .row-4.desktop-row {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

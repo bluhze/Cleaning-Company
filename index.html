@@ -4,13 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wilson's Cleaning Company LLC | "Your every cleaning need MET!"</title>
-    <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="320.css">
-    <link rel="stylesheet" href="680.css">
-    <link rel="stylesheet" href="768.css">
-    <link rel="stylesheet" href="860.css">
+    <title>Cleaning Company LLC | "Cleaning On Demand"</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+
+    <meta name="description" content="Cleaning Service provides top-tier residential and office cleaning throughout Delaware. Meeting the demand for spotless spaces with reliable, affordable service.">
+    
+
+
+    <!-- Preload images and css -->
+    <link rel="preload" href="/assets/img/mobile-nav-png.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/logo2.png" as="image" type="image/png" />
+    
+    <link rel="preload" href="/assets/img/services_1_img.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/services_2_img.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/services_3_img.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/services_4_img.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/services_5_img.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/services_6_img.png" as="image" type="image/png" />
+
+    <link rel="preload" href="/assets/img/pro_1.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/pro_2.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/pro_3.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/pro_4.png" as="image" type="image/png" />
+    
+
+    <link rel="preload" href="/assets/img/logo3.png" as="image" type="image/png" />
+
+    <link rel="preload" href="/assets/img/fb.png" as="image" type="image/png" />
+    <link rel="preload" href="/assets/img/tw.png" as="image" type="image/png" />    
+    <link rel="preload" href="/assets/img/ig.png" as="image" type="image/png" /> 
+    <link rel="preload" href="/assets/img/bkg.jpeg" as="image" type="image/jpeg" /> 
+    
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Favicon -->
 
@@ -26,11 +53,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("MyNav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </head>
 
 <body>
 
-    <section id="gift_card_banner">
+    <section id="gift_card_banner" aria-label="Gift Card Promotion">
         <div class="box">
             <div class="giftcard__banner">
                 <p>GIFT CARDS AVAILABLE PURCHASE TODAY</p>
@@ -38,588 +76,286 @@
         </div>
     </section>
 
-    <section id="nav_bar">
+    <header role="banner">
         <div class="box">
-            <div class="nav__bar">
-                <div class="nav__logo">
+            <nav id="nav_bar">
+                <div class="nav__bar" role="navigation" aria-label="Main Navigation">
+                    <a href="javascript:void(0);" onclick="myFunction()" aria-label="Toggle Menu">
+                        <img src="/assets/img/mobile-nav-png.png" width="50" height="50" alt="Menu Icon">
+                    </a>
                     <picture>
-                        <img src="/logo.webp" alt="">
+                        <img src="/assets/img/logo2.png" width="100" height="90" alt="Cleaning Company Logo">
                     </picture>
                 </div>
-                <script>
-
-                    const button = document.getElementById("coo");
-                    const menu = document.getElementById("toggleMenu");
-
-                    const toggleClick = () => {
-                        //  menu.classList.toggle('hidden');
-                        console.log('button pressed');
-
-                        document.getElementById("toggleMenu").classList.toggle("hidden");
-                    }
-
-                    const menuClose = () => {
-                        document.getElementById("toggleMenu").classList.toggle("hidden");
-                    }
-
-
-
-                </script>
-                <div class="nav__menu">
-                    <div class="nav__menu__mobile">
-                        <div class="nav__menu__button">
-                            <picture>
-                                <img src="/mobile-nav-png.png" id="coo" onclick="toggleClick()">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="nav__menu__desktop">
-                        <ul>
-                            <li class="current_page"><a href="/">Home</a></li>
-                            <li><a href="/services.html">Services</a> </li>
-                            <li><a href="/faq.html">FAQ</a></li>
-                            <li><a href="/contact.html">Contact</a></li>
-                            <li><a href="/about.html">About Us</a></li>
-                            <li class="menu_cta"><a href="/quote.html">Quote</a></li>
-                        </ul>
+                <div class="nav__menu" id="MyNav">
+                    <div class="nav__links">
+                        <a href="/">Home</a>
+                        <a href="/services">Services</a>
+                        <a href="/contact">Contact</a>
+                        <a href="/about">About Us</a>
                     </div>
                 </div>
-                <div class="nav__menu__side hidden" id="toggleMenu">
-                    <ul>
-                        <li> <p class="close" onclick="menuClose()">X</p></li>
-                        <li class="current_page"><a href="/">Home</a></li>
-                        <li><a href="/services.html">Services</a> </li>
-                        <li><a href="/faq.html">FAQ</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
-                        <li><a href="/about.html">About Us</a></li>
-                        <li class="menu_cta"><a href="/quote.html">Quote</a></li>
-                    </ul>
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="hero">
-        <video class="video-bg" autoplay muted loop>
-            <source src="videoBkg1.mov">
-        </video>
-        <div class="box">
-            <div class="hero__section">
-                <div class="hero__subtext">
-                    <h3>Wilson's Cleaning Company LLC</h3>
-                    <h2>Cleaning Services in Delaware
-                        and surrounding areas</h2>
-                    <p>Discover the magic of a spotless home!
-                        A tidy space for a clear mind.</p>
-                </div>
-                <div class="hero__cta">
-                    <form action="">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Service Needed">
-                        <button>GET QUOTE</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="what_we_do">
-        <div class="box">
-            <div class="what_we_do__section">
-
-                <div class="what_we_do__headline">
-                    <h1>Welcome to Sparkling Clean Services!</h1>
-                </div>
-                <div class="what_we_do__picture">
-                    <span></span>
-                </div>
-                <div class="what_we_do__subtext">
-                    <p>
-                        I started cleaning homes at the peak of the pandemic in 2019, at a time where cleaning was
-                        at an
-                        all time high. As a clean freak I decided to take matters into my own hands. My solution,
-                        starting Wilson's Cleaning Company. With this vision that was placed on my heart I'd be able
-                        to
-                        help people keep their environments healthy, safe and clean, while also touching the lives
-                        of
-                        each client I came into contact with. With so much great things in store for the future I
-                        would
-                        like to formally invite you to join our family, the Wilson Family.
-                    </p>
-                </div>
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="what_we_do">
-        <div class="box">
-            <div class="what_we_do__section">
-                <div class="what_we_do__headline">
-                    <h1>What We Do</h1>
-                </div>
-                <div class="what_we_do__picture">
-                    <span></span>
-                </div>
-                <div class="what_we_do__subtext">
-                    <p>We are committed to recognizing the unique characteristics of each residence, and thus, our
-                        services are customized to suit your specific requirements. Our meticulous attention to detail
-                        remains unwavering, irrespective of the task or property. At Wilson’s Cleaning Company, we take
-                        pride in prioritizing your satisfaction above all else.</p>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-
-    <section id="services">
-        <div class="box">
-            <div class="service__section">
-                <div class="service__header">
-                    <!-- <h1>Services</h1> -->
-                    <h1>Our Cleaning Services</h1>
-                    <p>
-                        Choose from our wide range of cleaning services designed to meet your needs.
-                    </p>
-                </div>
-                <div class="service__tiles">
-                    <img src="/services_2_img.png" alt="">
-                    <img src="/services_2_img.png" alt="">
-                    <img src="/services_2_img.png" alt="">
-                </div>
-                <div class="service__tiles">
-                    <img src="/services_2_img.png" alt="">
-                    <img src="/services_2_img.png" alt="">
-                    <img src="/services_2_img.png" alt="">
-                </div>
-
-                <!-- <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_1_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Standard Cleaning Package</h3>
-                            <span></span>
-                            <p>Recommended for first time cleans.This package is ideal for targeting any hard to reach
-                                places and any areas that may have been neglected over time. We bring ladders and work
-                                our way from the top to the bottom of each room.</p>
-                            <a class="see_more" href="/services.html#standardpackage">
-                                SEE MORE
-                            </a>
-                        </div>
+    <main role="main">
+        <section id="hero" aria-label="Introduction">
+            <video class="video-bg" autoplay muted loop aria-hidden="true">
+                <source src="/assets/img/videoBkg1.mov">
+            </video>
+            <div class="box">
+                <div class="hero__section">
+                    <div class="hero__subtext">
+                        <h3>Cleaning Company LLC</h3>
+                        <h2>Cleaning Services in Delaware
+                            and surrounding areas</h2>
+                        <p>Discover the magic of a spotless home!
+                            A tidy space for a clear mind.</p>
                     </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_2_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Deep Cleaning Package</h3>
-                            <span></span>
-                            <p>Recommended for first time cleans.This package is ideal for targeting any hard to reach
-                                places and any areas that may have been neglected over time. We bring ladders and work
-                                our way from the top to the bottom of each room.</p>
-                            <a class="see_more" href="/services.html#deeppackage">
-                                SEE MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_2_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Move In/Out Services</h3>
-                            <span></span>
-                            <p>Whether is a move in cleaning or move out, we remove all of the dirt and grime from the
-                                ceilings to the floor.</p>
-                            <a class="see_more" href="/services.html#moveout">
-                                SEE MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_1_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Standard Cleaning Package</h3>
-                            <span></span>
-                            <p>Recommended for first time cleans.This package is ideal for targeting any hard to reach
-                                places and any areas that may have been neglected over time. We bring ladders and work
-                                our way from the top to the bottom of each room.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_2_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Deep Cleaning Package</h3>
-                            <span></span>
-                            <p>Recommended for first time cleans.This package is ideal for targeting any hard to reach
-                                places and any areas that may have been neglected over time. We bring ladders and work
-                                our way from the top to the bottom of each room.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="/services_2_img.png" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Deep Cleaning Package</h3>
-                            <span></span>
-                            <p>Recommended for first time cleans.This package is ideal for targeting any hard to reach
-                                places and any areas that may have been neglected over time. We bring ladders and work
-                                our way from the top to the bottom of each room.</p>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="services-cta">
-                    <button>Learn More About Our Services</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section id="what_we_do">
-        <div class="box">
-            <div class="what_we_do__section">
-                <div class="what_we_do__headline">
-                    <h1>About</h1>
-                </div>
-                <div class="what_we_do__picture">
-                    <span></span>
-                </div>
-                <div class="what_we_do__subtext">
-                    <p>I started cleaning homes at the peak of the pandemic in 2019, at a time where cleaning was at an
-                        all time high. As a clean freak I decided to take matters into my own hands. My solution,
-                        starting Wilson's Cleaning Company. With this vision that was placed on my heart I'd be able to
-                        help people keep their environments healthy, safe and clean, while also touching the lives of
-                        each client I came into contact with. With so much great things in store for the future I would
-                        like to formally invite you to join our family, the Wilson Family.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section id="why_choose_us"></section> -->
-    <!-- <section id="what_we_do">
-        <div class="box">
-            <div class="what_we_do__section">
-                <div class="what_we_do__headline">
-                    <h1>Why Choose Sparkling Clean Services?</h1>
-                </div>
-                <div class="what_we_do__picture">
-                    <span></span>
-                </div>
-                <div class="what_we_do__subtext">
-                    <p>I started cleaning homes at the peak of the pandemic in 2019, at a time where cleaning was at an
-                        all time high. As a clean freak I decided to take matters into my own hands. My solution,
-                        starting Wilson's Cleaning Company. With this vision that was placed on my heart I'd be able to
-                        help people keep their environments healthy, safe and clean, while also touching the lives of
-                        each client I came into contact with. With so much great things in store for the future I would
-                        like to formally invite you to join our family, the Wilson Family.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-    <section id="why_us">
-        <div class="box">
-            <div class="why_us_section">
-                <div class="why_us__headline">
-                    <h1>Why Choose Sparkling Clean Services?</h1>
-                </div>
-                <div class="col_section">
-                    <div class="col__">
-                        <div class="col_icon">
-                            <img src="/pro_1.png" alt="">
-                        </div>
-                        <div class="col_header">
-                            <h3>Experienced Team:</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Professional and trained cleaners
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <img src="/pro_2.png" alt="">
-                        </div>
-                        <div class="col_header">
-                            <h3>Flexible Scheduling:</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Convenient cleaning times to suit your schedule
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <img src="/pro_3.png" alt="">
-                        </div>
-                        <div class="col_header">
-                            <h3>Eco-Friendly Products:</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Safe for your family and pets
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <img src="/pro_1.png" alt="">
-                        </div>
-                        <div class="col_header">
-                            <h3>Satisfaction Guarantee:</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                We’re not happy until you are
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="why_us_cta">
-                    <button>Get A Free Quote</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <div class="box">
-            <div class="testimonial__section">
-                <div class="testimonial__header">
-                    <h1>What Our Customers Say</h1>
-                </div>
-                <div class="testimonial__reviews">
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>"Very pleased with my service from Wilson's cleaning. 10/10 would definitely
-                                recommend!!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3>Don</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Bear, DE
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>"Beautiful work done to our pews!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3>Church on the Rock Ministries Inc.</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                New Castle, DE
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>Phenomenal Job on the upholstery & Carpets in our church!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3> New Birth Ministries</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Newport, DE
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial__reviews">
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>"Absolutely AMAZING, we love it! I'm so happy you found that stuff and even the lamp
-                                shades!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3>Christopher D.</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Wilmington, DE
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>"Stellar service all the way around. I would recommend Wilson's cleaning to clean heaven
-                                if it ever needed it!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3>Joe</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Philadelphia, PA
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col__">
-                        <div class="col_icon">
-                            <h2>"I just got home and I'm in tears! my heart is glad to see things finally coming
-                                together. Many thanks!"</h2>
-                        </div>
-                        <div class="col_header">
-                            <h3> Cherron T.</h3>
-                        </div>
-                        <div class="col_text">
-                            <p>
-                                Middletown, DE
-                            </p>
-                        </div>
+                    <div class="hero__cta">
+                        <form aria-label="Quote Request Form">
+                            <input type="text" placeholder="Full Name" required aria-label="Full Name">
+                            <input type="text" placeholder="Email" required aria-label="Email">
+                            <input type="text" placeholder="Service Needed" required aria-label="Service Needed">
+                            <button>GET QUOTE</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="home_contact_form">
-        <div class="box">
-            <div class="contact__form__section">
-                <div class="contact__form__header">
-                    <h1>Get a Free Quote
-                    </h1>
-                    <p>Fill out the form below to get a free, no-obligation quote for your cleaning needs.</p>
-                </div>
-                <div class="contact__form">
-                    <form action="">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Phone Number">
-                        <input type="text" placeholder="Address">
-                        <input type="text" placeholder="Type of Service Needed">
-                        <input type="text" placeholder="Full Name">
-                        <textarea placeholder="Provide any details you think are important." name="" id="" cols="30"
-                            rows="10"></textarea>
-                        <button>SUBMIT</button>
-                    </form>
-                </div>
+        <section id="what_we_do" aria-labelledby="whatwedo-heading">
+            <div class="box">
+                <div class="what_we_do__section">
 
-            </div>
-        </div>
-    </section>
+                    <div class="what_we_do__headline">
+                        <h1 id="whatwedo-heading">Welcome to Cleaning Company Services!</h1>
+                    </div>
+                    <div class="what_we_do__picture">
+                        <span></span>
+                    </div>
+                    <div class="what_we_do__subtext">
+                        <p>
+                            We began cleaning homes at the height of the pandemic in 2019—a time when cleanliness was more important than ever. As a team passionate about creating spotless spaces, we felt called to take action. That’s when the Cleaning Company was born. Our mission has always been to help people maintain safe, healthy environments while making a meaningful impact on everyone we serve. With so much more ahead, we’d love for you to be part of this growing journey.
+                        </p>
+                    </div>
 
-    <!-- <section id="picture_break">
-        <div class="box">
-            <div class="picture_break_section">
 
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section id="testimonials">
-        <div class="box">
-            <div class="testimonial__section">
-                <div class="testimonial__header">
-                    <h1>Testimonials</h1>
-                </div>
-                <div class="testimonial__reviews">
 
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-
-    <!-- <section id="process">
-        <div class="box">
-            <div class="process__section">
-                <div class="process__header">
-                    <h1>How Our Process Works</h1>
-                </div>
-                <div class="process__icons">
-                    <img src="/pro_1.png" alt="">
-                    <img src="/pro_2.png" alt="">
-                    <img src="/pro_3.png" alt="">
+        <section id="services" aria-labelledby="services-heading">
+            <div class="box">
+                <div class="service__section">
+                    <div class="service__header">
+                        <h1 id="services-heading">Our Cleaning Services</h1>
+                        <p>
+                            Choose from our wide range of cleaning services designed to meet your needs.
+                        </p>
+                    </div>
+                    <div class="service__tiles">
+                        <img src="/assets/img/services_1_img.png"  alt="Cleaning Service 1">
+                        <img src="/assets/img/services_2_img.png"  alt="Cleaning Service 2">
+                        <img src="/assets/img/services_3_img.png"  alt="Cleaning Service 3">
+                    </div>
+                    <div class="service__tiles">
+                        <img src="/assets/img/services_4_img.png"  alt="Cleaning Service 4">
+                        <img src="/assets/img/services_5_img.png"  alt="Cleaning Service 5">
+                        <img src="/assets/img/services_6_img.png"  alt="Cleaning Service 6">
+                    </div>
+                    
+                    <div class="services-cta">
+                        <button>
+                            <a href="/services.html">Learn More About Our Services</a>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
 
-
-    <section id="picture_break_2">
-        <div class="box">
-            <div class="picture_break_section">
-
+        <section id="why_us" aria-labelledby="whyus-heading">
+            <div class="box">
+                <div class="why_us_section">
+                    <div class="why_us__headline">
+                        <h1 id="whyus-heading">Why Choose Sparkling Clean Services?</h1>
+                    </div>
+                    <div class="col_section">
+                        <div class="col__">
+                            <div class="col_icon">
+                                <img src="/assets/img/pro_1.png" width="100" height="100" alt="Reason 1">
+                            </div>
+                            <div class="col_header">
+                                <h3>Experienced Team:</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    Professional and trained cleaners
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col__">
+                            <div class="col_icon">
+                                <img src="/assets/img/pro_2.png" width="100" height="100" alt="Reason 2">
+                            </div>
+                            <div class="col_header">
+                                <h3>Flexible Scheduling:</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    Convenient cleaning times to suit your schedule
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_section">
+                        <div class="col__">
+                            <div class="col_icon">
+                                <img src="/assets/img/pro_3.png" width="100" height="100" alt="Reason 3">
+                            </div>
+                            <div class="col_header">
+                                <h3>Eco-Friendly Products:</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    Safe for your family and pets
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col__">
+                            <div class="col_icon">
+                                <img src="/assets/img/pro_4.png" width="100" height="100" alt="Reason 4">
+                            </div>
+                            <div class="col_header">
+                                <h3>Satisfaction Guarantee:</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    We’re not happy until you are
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why_us_cta">
+                        <button>
+                            <a href="/quote.html">Get A Free Quote</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="box">
+                <div class="testimonial__section">
+                    <div class="testimonial__header">
+                        <h1 id="testimonials-heading">What Our Customers Say</h1>
+                    </div>
+                    <div class="testimonial__reviews">
+                        <div class="col__">
+                            <div class="col_icon">
+                                <h2>"Very pleased with my service from the Cleaning Company. 10/10 would definitely
+                                    recommend!!"</h2>
+                            </div>
+                            <div class="col_header">
+                                <h3>Don</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    Bear, DE
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col__">
+                            <div class="col_icon">
+                                <h2>"Beautiful work done to our pews!"</h2>
+                            </div>
+                            <div class="col_header">
+                                <h3>Church on the Rock Ministries Inc.</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    New Castle, DE
 
-    <section id="footer">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col__">
+                            <div class="col_icon">
+                                <h2>Phenomenal Job on the upholstery & Carpets in our church!"</h2>
+                            </div>
+                            <div class="col_header">
+                                <h3> New Birth Ministries</h3>
+                            </div>
+                            <div class="col_text">
+                                <p>
+                                    Newport, DE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="home_contact_form" aria-labelledby="testimonials-heading">
+            <div class="box">
+                <div class="contact__form__section">
+                    <div class="contact__form__header">
+                        <h1 id="contactform-heading">Get a Free Quote
+                        </h1>
+                        <p>Fill out the form below to get a free, no-obligation quote for your cleaning needs.</p>
+                    </div>
+                    <div class="contact__form">
+                        <form aria-label="Contact form">
+                            <input type="text" placeholder="Full Name" aria-label="Full Name">
+                            <input type="text" placeholder="Email" aria-label="Email">
+                            <input type="text" placeholder="Phone Number" aria-label="Phone Number">
+                            <input type="text" placeholder="Address" aria-label="Address">
+                            <input type="text" placeholder="Type of Service Needed" aria-label="Type of Service Needed">
+                            <input type="text" placeholder="Full Name" aria-label="Full Name">
+                            <textarea placeholder="Provide any details you think are important." name="" id="" cols="30"
+                                rows="10"></textarea>
+                            <button>SUBMIT</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
         <div class="box">
             <div class="footer__section">
-                <div class="footer__menu">
+                <div class="footer__menu" aria-label="Footer Navigation">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li>
-                            <a href="">Services</a>
+                            <a href="/services">Services</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__menu">
-                    <ul>
-                        <li>
-                            <a href="">Reviews</a>
-                        </li>
-                        <li>
-                            <a href="">Book</a>
-                        </li>
-                        <li>
-                            <a href="">Gift Cards</a>
-                        </li>
-                        <li>
-                            <a href="">Policies</a>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="footer__email__capture">
                     <p>Stay up to date on the latest deals!</p>
-                    <input type="text" placeholder="Enter Email Address">
+                    <input type="text" placeholder="Enter Email Address" aria-label="Enter Email Address">
                     <button>SUBMIT</button>
                 </div>
                 <div class="footer__logo">
                     <picture>
-                        <img src="/logo3.png" alt="">
+                        <img src="/assets/img/logo3.png" width="100" height="100" alt="Cleaning Company Logo">
                     </picture>
                 </div>
             </div>
@@ -627,23 +363,23 @@
                 <ul>
                     <li>
                         <a href="">
-                            <img src="/fb.png" alt="">
+                            <img src="/assets/img/fb.png" width="20" height="20" alt="Facebook">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="/tw.png" alt="">
+                            <img src="/assets/img/tw.png" width="20" height="20" alt="Twitter">
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="/ig.png" alt="">
+                            <img src="/assets/img/ig.png" width="20" height="20" alt="Instagram">
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="footer__terms">
-                <p>(302) 761-3262 | wilsoncleaningco@yahoo.com</p>
+                <p>(123) 345-6789 | cleaningco@yahoo.com</p>
             </div>
             <div class="footer__copyright">
                 <p>Terms & Service | Privacy Policy</p>
@@ -652,7 +388,8 @@
                 <p>Copyright 2024</p>
             </div>
         </div>
-    </section>
+    </footer>
+
 </body>
 
 </html>
